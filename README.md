@@ -44,7 +44,7 @@ Além dos elementos que nomeiam o modelo, também é comum encontrar um quarto c
 
 O padrão Model View ViewModel foi pensado pelo Arquiteto de Software John Gossman e a equipe da Microsoft em 2005, tendo como base o MVC e o MVP, com o intuito de possibilitar o <i>Data Binding (compartilhamento estavél e síncrono de informações entre uma fonte e um receptor ou entre duas fontes de dados)</i> junto ao Microsoft Silverlight, usado no desenvolvimento de navegadores e plug-ins. Sua criação também foi creditada à necessidade de dividir sistemas em camadas especializadas em determinadas funções, sendo essas camadas:
 
-<img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/210266105-c4669697-15ef-493e-a86d-5fb81c2d8340.png">
+<img align="left" src="https://user-images.githubusercontent.com/61476935/210266105-c4669697-15ef-493e-a86d-5fb81c2d8340.png">
 
 ### View
 
