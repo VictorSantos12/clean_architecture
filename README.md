@@ -24,7 +24,7 @@ Com o intuito de compreender um modelo de arquitetura específico (Clean), é im
 
 Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como um possível padrão em 1979 por Trygve Reenskaug, cinetista da computação norueguês. O modelo consiste em separar a aplicação em três camadas independentes: o Model, view e controller, o que permite dissociar a UI das regras de negócio do sistema, o que foi bastante inovador no periodo citado. Além disso, o MVC permite a reutilização de código, uma melhor compreensão e manutenção, e facilita a criação de multiplas interfaces, o que é bastante difundido na stack front-end. O trecho a seguir auxilia no entendimento de cada camada:
 
-<img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/210247819-ce99b554-9b11-4032-b4cc-111d14810090.png">
+<img align="left" style="width: 300px;" src="https://user-images.githubusercontent.com/61476935/210247819-ce99b554-9b11-4032-b4cc-111d14810090.png">
 
 ### View
 
@@ -44,7 +44,7 @@ Além dos elementos que nomeiam o modelo, também é comum encontrar um quarto c
 
 O padrão Model View ViewModel foi pensado pelo Arquiteto de Software John Gossman e a equipe da Microsoft em 2005, tendo como base o MVC e o MVP, com o intuito de possibilitar o <i>Data Binding (compartilhamento estavél e síncrono de informações entre uma fonte e um receptor ou entre duas fontes de dados)</i> junto ao Microsoft Silverlight, usado no desenvolvimento de navegadores e plug-ins. Sua criação também foi creditada à necessidade de dividir sistemas em camadas especializadas em determinadas funções, sendo essas camadas:
 
-<img align="left" src="https://user-images.githubusercontent.com/61476935/210266105-c4669697-15ef-493e-a86d-5fb81c2d8340.png">
+<img align="left" style="width: 300px;" src="https://user-images.githubusercontent.com/61476935/210266105-c4669697-15ef-493e-a86d-5fb81c2d8340.png">
 
 ### View
 
