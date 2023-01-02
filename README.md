@@ -26,10 +26,6 @@ Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como 
 
 <img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/210247819-ce99b554-9b11-4032-b4cc-111d14810090.png">
 
-### Model
-
-Responsável pelo acesso e manipulação de dados da aplicação. É no model que se concentram os métodos reponsáveis por consultar o banco de dados ou por acessar os endpoits de uma API integrada.
-
 ### View
 
 Responsável por conter a interface e tudo o que a compõe, sendo onde se encontra os arquivos HTML, de template e etc.
@@ -37,6 +33,10 @@ Responsável por conter a interface e tudo o que a compõe, sendo onde se encont
 ### Controller
 
 Responsável por controllar a interação entre Model e View, recebendo as requisições do usuário (disparadas pela interface) e acessar os models para obter uma resposta concisa.
+
+### Model
+
+Responsável pelo acesso e manipulação de dados da aplicação. É no model que se concentram os métodos reponsáveis por consultar o banco de dados ou por acessar os endpoits de uma API integrada.
 
 Além dos elementos que nomeiam o modelo, também é comum encontrar um quarto conceito: o <i>Router</i>. Este sendo o responsável por associar determinado método da camada de controle a um endereço (rota) do sistema. 
 
