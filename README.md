@@ -22,13 +22,13 @@ Com o intuito de compreender um modelo de arquitetura específico (Clean), é im
 
 ## Model-view-controller (MVC)
 
-Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como um possível padrão em 1979 por Trygve Reenskaug, cinetista da computação norueguês. O modelo consiste em separar a aplicação em três camadas independentes: o Model, view e controller, o que permite dissociar a UI das regras de negócio do sistema, o que foi bastante inovador no periodo citado. Além disso, o MVC permite a reutilização de código, uma melhor compreensão e manutenção, e facilita a criação de multiplas interfaces, o que e bastante difundido na stack front-end. O trecho a seguir auxilia no entendimento de cada camada:
+Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como um possível padrão em 1979 por Trygve Reenskaug, cinetista da computação norueguês. O modelo consiste em separar a aplicação em três camadas independentes: o Model, view e controller, o que permite dissociar a UI das regras de negócio do sistema, o que foi bastante inovador no periodo citado. Além disso, o MVC permite a reutilização de código, uma melhor compreensão e manutenção, e facilita a criação de multiplas interfaces, o que é bastante difundido na stack front-end. O trecho a seguir auxilia no entendimento de cada camada:
 
 <img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/210247819-ce99b554-9b11-4032-b4cc-111d14810090.png">
 
 ### View
 
-Responsável por conter a interface e tudo o que a compõe, sendo onde se encontra os arquivos HTML, de template e etc.
+Responsável por conter a interface e tudo o que a compõe. É a partir da view que interação com as demais camadas se inicia e é nela que se encontra os arquivos de template, estilo e etc.
 
 ### Controller
 
@@ -40,9 +40,27 @@ Responsável pelo acesso e manipulação de dados da aplicação. É no model qu
 
 Além dos elementos que nomeiam o modelo, também é comum encontrar um quarto conceito: o <i>Router</i>. Este sendo o responsável por associar determinado método da camada de controle a um endereço (rota) do sistema. 
 
-### Microservices (microsserviços)
+## Model-View-ViewModel (MVVM)
 
+O padrão Model View ViewModel foi pensado pelo Arquiteto de Software John Gossman e a equipe da Microsoft em 2005, tendo como base o MVC e o MVP, com o intuito de possibilitar o <i>Data Binding (compartilhamento estavél e síncrono de informações entre uma fonte e um receptor ou entre duas fontes de dados)</i> junto ao Microsoft Silverlight, usado no desenvolvimento de navegadores e plug-ins. Sua criação também foi creditada à necessidade de dividir sistemas em camadas especializadas em determinadas funções, sendo essas camadas:
 
+<img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/210266105-c4669697-15ef-493e-a86d-5fb81c2d8340.png">
+
+### View
+
+Assim como no MVC, a View se reponsabiliza por renderizar as informações obtidas das demais camadas, sendo essencialmente ignorante com relação a forma com que essas informações foram obtidas, se importanto apanas com o formato no qual precisa exibir as informações e com as demais rotinas associadas com a experiência do usuário, como atualizações de estado.
+
+### ViewModel 
+
+A ViewModel por sua vez, tem como intuito disponibilizar uma lógica de apresentação para a View e gerenciar seus de estados através de comandos e Data Binding, sendo a responsável por criar a ponte entre interface e data source, já que ambas não possuem conhecimento uma da outra. Além disso, pode ser função da ViewModel validar o fluxo de dados e garantir a consistência das informções exibidas e enviadas.
+
+### Model
+
+O papel do Model é encapsular a regra de negócio responsável por obter as informações de um outro serviço, seja uma API, banco de dados e etc. É responsabilidade do Model validar as informações obtidas das ações do usuário de acordo com a regra de negócio que atende ou é atendida pela aplicação em questão.
+
+É bastante comum encontrar o padrão MVVM em ambientes Mobile, como Swift, Java, Dart e entre outros, visto que a interface recebe bastante atenção, tendo uma camada voltada especificamente para tratar e atender as suas necessidades (a ViewModel). Além de ter o Observable Patters como referência para gerenciamento de estado; este que está diretamente associado a programação reativa, que por sua vez está muito presente da construção de interfaces de usuário em geral.   
+
+## Microservices (microsserviços)
 
 ## Pipes-and-filters (PF)
 
