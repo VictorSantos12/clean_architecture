@@ -20,10 +20,18 @@ A arquitetura de software opera as relações entre os componentes de um sistema
 
 Com o intuito de compreender um modelo de arquitetura específico (Clean), é importante conhecer e saber diferenciar as alternativas disponíveis e quando estas devem ser adotadas. Portanto, a seguir há uma descrição básica dos principais modelos de arquitetura de software utilizados hoje em dia:
 
+### Model-view-controller (MVC)
 
+### Microservices (microsserviços)
 
+### Pipes-and-filters (PF)
 
+### Peer-to-Peer (P2P)
 
+### Service-Oriented Architecture (SOA)
 
+### Publish-Subscribe (Pub/Sub)
 
+### Client-server (cliente-servidor)
 
+### Layers (Camadas)
