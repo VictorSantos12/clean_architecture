@@ -23,8 +23,8 @@ A arquitetura de software opera as relações entre os componentes de um sistema
 
 Com o intuito de compreender um modelo de arquitetura específico (Clean), é importante conhecer e saber diferenciar as alternativas disponíveis e quando estas devem ser adotadas. Portanto, a seguir estão listados os principais modelos de arquitetura de software utilizados hoje em dia:
 
-[Model-view-controller (MVC)]()
-[Model-View-ViewModel (MVVM)]()
+- [Model-view-controller (MVC)]()
+- [Model-View-ViewModel (MVVM)]()
 
 <!-- ## Model-view-controller (MVC)
 
