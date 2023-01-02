@@ -1,7 +1,8 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/61476935/210269491-dbdd0597-4227-4969-bd84-b72ba65cdf4a.png" >
+  <img src="https://user-images.githubusercontent.com/61476935/210269491-dbdd0597-4227-4969-bd84-b72ba65cdf4a.png">
 </div>
 <br>
+
 A Clean Architecture, ou Arquitetura Limpa, é um padrão de arquitetura de sistemas criado por Rober Cecil Martin, popularmente conhecido na comunidade de tecnologia como [Uncle Bob](https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKoyyk5PMmD04izNS85JVUjKTwIAVZAHQg&q=uncle+bob&rlz=1C1ASUM_enBR992BR992&oq=Uncle+Bob&aqs=chrome.1.69i57j46i512j0i512l8.3321j0j7&sourceid=chrome&ie=UTF-8). Sendo inicialmente divulgada através do também popular "Arquitetura Limpa - O Guia do Artesão para Estrutura e Design de Software", é bastante difundida no mercado tech e amplamente adotado quando se trata de arquitetura de sistemas.
 
 Antes de adentrar no que caracteriza a Clean Architecture, é importante entender do que se trata o tópico <i>Arquitetura</i> em desenvolvimento de sistemas, porque ela é necessária, e quais são as formas de atender a essa necessidade.
