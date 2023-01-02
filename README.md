@@ -21,9 +21,12 @@ A arquitetura de software opera as relações entre os componentes de um sistema
 
 ## Modelos de Arquitetura
 
-Com o intuito de compreender um modelo de arquitetura específico (Clean), é importante conhecer e saber diferenciar as alternativas disponíveis e quando estas devem ser adotadas. Portanto, a seguir há uma descrição básica dos principais modelos de arquitetura de software utilizados hoje em dia:
+Com o intuito de compreender um modelo de arquitetura específico (Clean), é importante conhecer e saber diferenciar as alternativas disponíveis e quando estas devem ser adotadas. Portanto, a seguir estão listados os principais modelos de arquitetura de software utilizados hoje em dia:
 
-## Model-view-controller (MVC)
+[Model-view-controller (MVC)]()
+[Model-View-ViewModel (MVVM)]()
+
+<!-- ## Model-view-controller (MVC)
 
 Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como um possível padrão em 1979 por Trygve Reenskaug, cinetista da computação norueguês. O modelo consiste em separar a aplicação em três camadas independentes: o Model, view e controller, o que permite dissociar a UI das regras de negócio do sistema, o que foi bastante inovador no periodo citado. Além disso, o MVC permite a reutilização de código, uma melhor compreensão e manutenção, e facilita a criação de multiplas interfaces, o que é bastante difundido na stack front-end. O trecho a seguir auxilia no entendimento de cada camada:
 
@@ -77,4 +80,4 @@ O papel do Model é encapsular a regra de negócio responsável por obter as inf
 
 ## Client-server (cliente-servidor)
 
-## Layers (Camadas)
+## Layers (Camadas) -->
