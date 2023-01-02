@@ -24,9 +24,11 @@ Com o intuito de compreender um modelo de arquitetura específico (Clean), é im
 
 Sendo um dos padrões de arquitetura mais populares, o MVC foi introduzido como um possível padrão em 1979 por Trygve Reenskaug, cinetista da computação norueguês. O modelo consiste em separar a aplicação em três camadas independentes: o Model, view e controller, o que permite dissociar a UI das regras de negócio do sistema, o que foi bastante inovador no periodo citado. Além disso, o MVC permite a reutilização de código, uma melhor compreensão e manutenção, e facilita a criação de multiplas interfaces, o que e bastante difundido na stack front-end. O trecho a seguir auxilia no entendimento de cada camada:
 
-- Model: Responsável pelo acesso e manipulação de dados da aplicação. É no model que se concentram os métodos reponsáveis por consultar o banco de dados ou por acessar os endpoits de uma API integrada.
-- View: Responsável por conter a interface e tudo o que a compõe, sendo onde se encontra os arquivos HTML, de template e etc.
-- Controller: Responsável por controllar a interação entre Model e View, recebendo as requisições do usuário (disparadas pela interface) e acessar os models para obter uma resposta concisa.
+<img align="left" style="width: 250px;" src="https://user-images.githubusercontent.com/61476935/179614835-f18ee0ca-a3a6-43f8-a02e-58e7c1f91f56.png">
+
+Model: Responsável pelo acesso e manipulação de dados da aplicação. É no model que se concentram os métodos reponsáveis por consultar o banco de dados ou por acessar os endpoits de uma API integrada.
+View: Responsável por conter a interface e tudo o que a compõe, sendo onde se encontra os arquivos HTML, de template e etc.
+Controller: Responsável por controllar a interação entre Model e View, recebendo as requisições do usuário (disparadas pela interface) e acessar os models para obter uma resposta concisa.
 
 Além dos elementos que nomeiam o modelo, também é comum encontrar um quarto conceito: o <i>Router</i>. Este sendo o responsável por associar determinado método da camada de controle a um endereço (rota) do sistema. 
 
