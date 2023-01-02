@@ -58,9 +58,11 @@ A ViewModel por sua vez, tem como intuito disponibilizar uma lógica de apresent
 
 O papel do Model é encapsular a regra de negócio responsável por obter as informações de um outro serviço, seja uma API, banco de dados e etc. É responsabilidade do Model validar as informações obtidas das ações do usuário de acordo com a regra de negócio que atende ou é atendida pela aplicação em questão.
 
-É bastante comum encontrar o padrão MVVM em ambientes Mobile, como Swift, Java, Dart e entre outros, visto que a interface recebe bastante atenção, tendo uma camada voltada especificamente para tratar e atender as suas necessidades (a ViewModel). Além de ter o Observable Patters como referência para gerenciamento de estado; este que está diretamente associado a programação reativa, que por sua vez está muito presente da construção de interfaces de usuário em geral.   
+É bastante comum encontrar o padrão MVVM em ambientes Mobile, como Swift, Java, Dart e entre outros, visto que ele é implicitamente recomendado para projetos cujo foco está em desenvolver a interface tendo a regra de negócio como base. Além disso, cabe citar o [Observable Patters](https://www.devmedia.com.br/design-patterns-observer/16875) como referência para gerenciamento de estados em uma arquitetura MVVM; este que está diretamente associado a programação reativa, que por sua vez está muito presente da construção de interfaces de usuário em geral.   
 
 ## Microservices (microsserviços)
+
+
 
 ## Pipes-and-filters (PF)
 
