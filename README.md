@@ -15,15 +15,11 @@ Com isso, pode-se dizer que <i>Arquitetura de Software compreende os elementos d
 
 ## Arquitetura vs Design de Software
 
-É mais comum do que se imagina associar incorretamente os conceitos de arquitetura e design de software. Por mais que haja uma interseção entre ambas, e que essa associação não seja de todo errônia, é importante diferenciar ambos os conceitos. 
+É mais comum do que se imagina associar incorretamente os conceitos de arquitetura e design de software. Por mais que haja uma interseção entre ambas, e que essa associação não seja de todo errônia, é importante diferenciar ambos os conceitos:
 
-### Arquitetura 
+- Arquitetura: A arquitetura de software opera as relações entre os componentes de um sistema.
 
-A arquitetura de software opera as relações entre os componentes de um sistema.
-
-### Desgin 
-
-O design de software se concentra na implementação dos componentes, focando em detalhes. 
+- Design: O design de software se concentra na implementação dos componentes, focando em detalhes. 
 
 ## Modelos de Arquitetura
 
