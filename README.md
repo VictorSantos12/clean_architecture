@@ -3,15 +3,15 @@
 </div>
 <br>
 
-A Clean Architecture, ou Arquitetura Limpa, é um padrão de arquitetura de sistemas criado por Rober Cecil Martin, popularmente conhecido na comunidade de tecnologia como [Uncle Bob](https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKoyyk5PMmD04izNS85JVUjKTwIAVZAHQg&q=uncle+bob&rlz=1C1ASUM_enBR992BR992&oq=Uncle+Bob&aqs=chrome.1.69i57j46i512j0i512l8.3321j0j7&sourceid=chrome&ie=UTF-8). Sendo inicialmente divulgada através do também popular "Arquitetura Limpa - O Guia do Artesão para Estrutura e Design de Software", é bastante difundida no mercado tech e amplamente adotado quando se trata de arquitetura de sistemas.
+A Clean Architecture, ou Arquitetura Limpa, é um padrão de arquitetura de sistemas criado por Rober Cecil Martin, popularmente conhecido como [Uncle Bob](https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKoyyk5PMmD04izNS85JVUjKTwIAVZAHQg&q=uncle+bob&rlz=1C1ASUM_enBR992BR992&oq=Uncle+Bob&aqs=chrome.1.69i57j46i512j0i512l8.3321j0j7&sourceid=chrome&ie=UTF-8). Sendo inicialmente divulgada através do também popular "Arquitetura Limpa - O Guia do Artesão para Estrutura e Design de Software", é bastante difundida no mercado tech e amplamente adotada quando se trata de arquitetura de sistemas.
 
-Antes de adentrar no que caracteriza a Clean Architecture, é importante entender do que se trata o tópico <i>Arquitetura</i> em desenvolvimento de sistemas, porque ela é necessária, e quais são as formas de atender a essa necessidade.
+No entanto, antes de adentrarmos no que caracteriza a Clean Architecture, é importante entender do que se trata o tópico <i>Arquitetura</i> em desenvolvimento de sistemas, porque ela é necessária, e quais são as formas de atender a essa necessidade.
 
 # Arquitetura de Software
 
-Uma definição básica de arquitetura é que ela consiste no conjunto de princípios, normas, técnicas e materiais usdados para criar um espaço arquitetônico. Isso quando tratamos do senso comum da palavra arquitetura. Porém, dentro do universo da computação, esse paradigma se distancia do senso comum e se aproxima de sua definição técnica, que se trata de agrupar os princípios, normas e técnicas para a criação organizada de algo, neste caso, um software.
+Uma definição básica de arquitetura é que ela consiste no conjunto de princípios, normas, técnicas e materiais usadados para criar um espaço arquitetônico. Isso quando tratamos do senso comum da palavra arquitetura. Porém, dentro do universo da computação, esse paradigma se distancia do senso comum e se aproxima de sua definição técnica, que consiste em agrupar os princípios, normas e técnicas para a criação organizada de algo, neste caso, um software.
 
-Com isso, pode-se dizer que <i>Arquitetura de Software compreende os elementos de um sistema, a relação entre eles, e suas propriedades,</i> vinsando ser a solução para problemas recorrentes do ofício, e auxiliar na tomada de decisões do decorrer do desenvolvimento.
+Com isso, pode-se dizer que <i>Arquitetura de Software compreende os elementos de um sistema, a relação entre eles, e suas propriedades,</i> vinsando ser a solução para problemas recorrentes do ofício, e auxiliar na tomada de decisões no decorrer do desenvolvimento.
 
 ## Arquitetura vs Design de Software
 
@@ -82,11 +82,17 @@ O papel do Model é encapsular a regra de negócio responsável por obter as inf
 
 # Por que a Clean Architecture ?
 
-A <i>Clean Achitecture</i> se caracteriza pela compartimentação de um sistema em camadas, delegando a cada uma delas uma responsabilidade única, que só é observável pela camada imediatamente acima nas subdivisões da arquitetura. Antes de entendermos tais camadas e suas responsabilidades, é importante entendermos as vantagens de aplicar uma arquitetura limpa quando iniciamos um novo projeto.
+A <i>Clean Achitecture</i> se caracteriza pela compartimentação de um sistema em camadas, delegando a cada uma delas uma responsabilidade única, que só é observável pela camada imediatamente acima nas subdivisões da arquitetura. Antes de entendermos tais camadas e suas responsabilidades, é importante entendermos as vantagens de aplicar uma arquitetura limpa quando iniciamos um novo projeto:
 
-Assim como qualquer modelo de arquitetura, a facilitação do entendimento e da manutenção durante a desenvolvimento, são visados quando se trata da arquitetura limpa. Manter o código coeso e fácil de manutenir é desejável quando se escala uma aplicação, porém, o principal trufo da Clean Achitecture é o nível de desacomplamento das funcionalidades do sistema, ou seja, qualquer entidade que compõe um app pode facilmente ser substituído, pois, o desenvolvimento visa a idependência de cada camada, tendo a regra de negócio como ponto de partida, e como última necessidade a implementação dos mecanismos de obtenção e entrega da informações.
+Assim como qualquer modelo de arquitetura, a facilitação do entendimento e da manutenção durante a desenvolvimento, são visados quando se trata da arquitetura limpa. Manter o código coeso e fácil de manutenir é desejável quando se escala uma aplicação, porém, o principal trunfo da Clean Achitecture é o nível de desacomplamento das funcionalidades do sistema, ou seja, qualquer entidade que compõe um app pode facilmente ser substituído, pois, o desenvolvimento visa a idependência de cada camada, tendo a regra de negócio como ponto de partida, e como última necessidade a implementação dos mecanismos de obtenção e entrega da informações.
 
-Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento permite ainda com se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema.
+Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento permite ainda com que se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema. Resumindo, projetos que são desenvolvidos mediante a uma arquitetura limpa possuem:
+
+- Independência de Framework;
+- Testabilidade;
+- Independência da Inteface do Usuário;
+- Independência de Banco de Dados;
+- Independência de Qualquer Eleneto Externo;
 
 Tendo definido a razão pela qual optar por uma arquitetura limpa é vantajoso, podemos entender seus aspectos em detalhes:
 
