@@ -68,8 +68,6 @@ O papel do Model é encapsular a regra de negócio responsável por obter as inf
 
 ## Microservices (microsserviços)
 
-
-
 ## Pipes-and-filters (PF)
 
 ## Peer-to-Peer (P2P)
@@ -81,3 +79,25 @@ O papel do Model é encapsular a regra de negócio responsável por obter as inf
 ## Client-server (cliente-servidor)
 
 ## Layers (Camadas) -->
+
+# Por que a Clean Architecture ?
+
+A <i>Clean Achitecture</i> se caracteriza pela compartimentação de um sistema em camadas, delegando a cada uma delas uma responsabilidade única, que só é observável pela camada imediatamente acima nas subdivisões da arquitetura. Antes de entendermos tais camadas e suas responsabilidades, é importante entendermos as vantagens de aplicar uma arquitetura limpa quando iniciamos um novo projeto.
+
+Assim como qualquer modelo de arquitetura, a facilitação do entendimento e da manutenção durante a desenvolvimento, são visados quando se trata da arquitetura limpa. Manter o código coeso e fácil de manutenir é desejável quando se escala uma aplicação, porém, o principal trufo da Clean Achitecture é o nível de desacomplamento das funcionalidades do sistema, ou seja, qualquer entidade que compõe um app pode facilmente ser substituído, pois, o desenvolvimento visa a idependência de cada camada, tendo a regra de negócio como ponto de partida, e como última necessidade a implementação dos mecanismos de obtenção e entrega da informações.
+
+Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento permite ainda com se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema.
+
+Tendo definido a razão pela qual optar por uma arquitetura limpa é vantajoso, podemos entender seus aspectos em detalhes:
+
+## Layers
+
+<img align="left" style="width: 350px;" src="https://user-images.githubusercontent.com/61476935/210290057-fb6d81a0-b8af-406c-9a00-922046c41c44.png">
+
+### Entities
+
+### Use Cases
+
+### Interface Adapters
+
+### Frameworks
