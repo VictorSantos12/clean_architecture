@@ -126,8 +126,12 @@ Um dos aspectos que torna a adoção da Clean Architecture problemática é, a p
 
 ### Presentation Layer
 
-
+A camada de apresentação corresponde as duas últimas camadas da Clean Architecture. É onde são declarados os <i>Interface Adapters</i>, <i>Frameworks</i> e <i>Drivers</i>. É nela que as informações serão tratadas e exibidas ou enviadas através da implementação dos casos de uso.
 
 ### Domain Layer
 
+A camada de <i>Domain</i> comporta a regra de negócio em geral, contendo as classes correspondentes as entidades e a abstração dos casos de uso.
+
 ### Data Layer
+
+A camada reponsável por expor as data sources, a implementação dos casos de uso e qualquer fonte de informação externa, além de definir os models criados a partir das entidades, é a camada <i>Data</i>.
