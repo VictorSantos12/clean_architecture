@@ -112,7 +112,7 @@ A camada de <i>Entities</i> é a principal camada da arquitetura, e é a que pri
 
 ### Interface Adapters
 
-A camada de <i>Interface Adapters</i> se responsabiliza pela conversão de dados e comunicação entre as camadas mais externas e mais internas. É nela que a entrada de dados da interface é adaptada para os casos de uso e entidades, assim como a saída de dados dos casos de uso e entidades são formatados convenientemente para que sejam exibidos na camada de apresentação.
+A camada de <i>Interface Adapters</i> se responsabiliza pela conversão de dados e comunicação entre as camadas externas e internas. É nela que a entrada de dados da interface é adaptada para os casos de uso e entidades, assim como a saída de dados dos casos de uso e entidades são formatados convenientemente para que sejam exibidos na camada de apresentação.
 
 ### Frameworks & Drivers
 
@@ -122,10 +122,12 @@ Na camada mais externa estão os elementos alheios a regra de negócio, os que d
 
 Um dos aspectos que torna a adoção da Clean Architecture problemática é, a primeira vista, o seu nível de complexidade. A implementação de multiplas camadas torna o desenvolvimento dificultoso a princípio. Porém, as camadas que definem os componentes da arquitetura limpa, não necessariamente serão implementadas na criação dos arquivos e pastas de um projeto. O que ocorre é a adaptação dessas camadas em três camadas principais. Estas são deicritas no modelo a seguir:
 
-<img width="90%" src="https://user-images.githubusercontent.com/61476935/210371959-72cbea62-3e80-4b14-a678-36cbd6398b2f.png">
+<img align="left" height="90%" width="90%" src="https://user-images.githubusercontent.com/61476935/210375432-cfadd7b2-91f3-4bcc-9d71-4ec04aee166f.png">
 
-## Presentation Layer
+### Presentation Layer
 
-## Domain Layer
 
-## Data Layer
+
+### Domain Layer
+
+### Data Layer
