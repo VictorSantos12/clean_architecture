@@ -88,7 +88,7 @@ A <i>Clean Achitecture</i> se caracteriza pela compartimentação de um sistema 
 
 >Assim como qualquer modelo de arquitetura, a facilitação do entendimento e da manutenção durante a desenvolvimento, são visados quando se trata da arquitetura limpa. Manter o código coeso e fácil de manutenir é desejável quando se escala uma aplicação, porém, o principal trunfo da Clean Achitecture é o nível de desacomplamento das funcionalidades do sistema, ou seja, qualquer entidade que compõe um app pode facilmente ser substituído, pois, o desenvolvimento visa a idependência de cada camada, tendo a regra de negócio como ponto de partida, e como última necessidade a implementação dos mecanismos de obtenção e entrega da informações.
 
-Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento permite ainda com que se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema. Resumindo, projetos que são desenvolvidos mediante a uma arquitetura limpa possuem:
+Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento permite ainda com que se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema, sem necessitar um banco de dados, API, ou qualquer fonte de informação. Resumindo, projetos que são desenvolvidos mediante a uma arquitetura limpa possuem:
 
 - Independência de Framework;
 - Testabilidade;
@@ -100,12 +100,32 @@ Tendo definido a razão pela qual optar por uma arquitetura limpa é vantajoso, 
 
 ## Layers
 
-<img align="left" src="https://user-images.githubusercontent.com/61476935/210290057-fb6d81a0-b8af-406c-9a00-922046c41c44.png">
+<img src="https://user-images.githubusercontent.com/61476935/210369798-adbbebda-92c7-4d20-8f8a-2e096d4b5d67.png">
 
 ### Entities
 
+A camada de <i>Entities</i> é a principal camada da arquitetura, e é a que primeiro recebe linhas de código. Nela se concentra tudo o que é pertinente a lógica de negócio, ou <i>Enterprise Business Rules (Regras de Negócio Corporativas)</i>, sendo geralmente um retrato das tabelas do banco de dados dentro do projeto. É na camada inicial que as propriedades, tipos e acessos de cada entidade se encontram, e por definirem uma regra, se repetem nos processos que envolvem as entidades.
+
 ### Use Cases
+
+É na camada de <i>Use Cases</i> que são definidas as <i>Application Business Rules</i>, ou seja, é onde definimos o comportamento do sistema com base na comunicação com as regras de negócio corporativas, sendo esta a responsável pela comunicação com as entidades e por abstrair as assinaturas de métodos que serão obrigatóriamente criados na implementação dos casos de uso. Toda e qualquer informação terá que passar pela camada de casos de uso obrigatóriamente.
 
 ### Interface Adapters
 
-### Frameworks
+A camada de <i>Interface Adapters</i> se responsabiliza pela conversão de dados e comunicação entre as camadas mais externas e mais internas. É nela que a entrada de dados da interface é adaptada para os casos de uso e entidades, assim como a saída de dados dos casos de uso e entidades são formatados convenientemente para que sejam exibidos na camada de apresentação.
+
+### Frameworks & Drivers
+
+Na camada mais externa estão os elementos alheios a regra de negócio, os que devem ser facilmente subistituíveis, como já foi dito. Nela encontramos os componentes cuja única função é permitir a comunicação com as camadas principais, sendo facilmente indentificados como a interface do usuário, bacos de dados, a web e etc. A ela só se deve expor o mínimo das camadas externas, necessário para a comunicação.
+
+# Implementando a Clean Architecture
+
+Um dos aspectos que torna a adoção da Clean Architecture problemática é, a primeira vista, o seu nível de complexidade. A implementação de multiplas camadas torna o desenvolvimento dificultoso a princípio. Porém, as camadas que definem os componentes da arquitetura limpa, não necessariamente serão implementadas na criação dos arquivos e pastas de um projeto. O que ocorre é a adaptação dessas camadas em três camadas principais. Estas são deicritas no modelo a seguir:
+
+<img width="90%" src="https://user-images.githubusercontent.com/61476935/210371959-72cbea62-3e80-4b14-a678-36cbd6398b2f.png">
+
+## Presentation Layer
+
+## Domain Layer
+
+## Data Layer
