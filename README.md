@@ -92,7 +92,7 @@ Tendo definido a razão pela qual optar por uma arquitetura limpa é vantajoso, 
 
 ## Layers
 
-<img align="left" width="60%" src="https://user-images.githubusercontent.com/61476935/210290057-fb6d81a0-b8af-406c-9a00-922046c41c44.png">
+<img align="left" src="https://user-images.githubusercontent.com/61476935/210290057-fb6d81a0-b8af-406c-9a00-922046c41c44.png">
 
 ### Entities
 
