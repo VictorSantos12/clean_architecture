@@ -122,7 +122,7 @@ Na camada mais externa estão os elementos alheios a regra de negócio, os que d
 
 Um dos aspectos que torna a adoção da Clean Architecture problemática é, a primeira vista, o seu nível de complexidade. A implementação de multiplas camadas torna o desenvolvimento dificultoso a princípio. Porém, as camadas que definem os componentes da arquitetura limpa, não necessariamente serão implementadas na criação dos arquivos e pastas de um projeto. O que ocorre é a adaptação dessas camadas em três camadas principais. Estas são deicritas no modelo a seguir:
 
-<img src="https://user-images.githubusercontent.com/61476935/210426581-be869ec7-ead3-44db-9be6-444ce64edcf4.png">
+<img src="https://user-images.githubusercontent.com/61476935/210433815-0c1438ab-6a5a-4779-8270-357ed1144609.png">
 
 ### Presentation Layer
 
