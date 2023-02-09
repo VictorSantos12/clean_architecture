@@ -3,7 +3,7 @@
 </div>
 <br>
 
-A Clean Architecture, ou Arquitetura Limpa, é um padrão de arquitetura de sistemas criado por Rober Cecil Martin, engenheiro de software americano, popularmente conhecido como [Uncle Bob](https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKoyyk5PMmD04izNS85JVUjKTwIAVZAHQg&q=uncle+bob&rlz=1C1ASUM_enBR992BR992&oq=Uncle+Bob&aqs=chrome.1.69i57j46i512j0i512l8.3321j0j7&sourceid=chrome&ie=UTF-8). Sendo inicialmente divulgada através do também popular "Arquitetura Limpa - O Guia do Artesão para Estrutura e Design de Software", é bastante difundida no mercado programação e amplamente adotada quando se trata de arquitetura de sistemas.
+A Clean Architecture, ou Arquitetura Limpa, é um padrão de arquitetura de sistemas criado por Rober Cecil Martin, engenheiro de software americano, popularmente conhecido como [Uncle Bob](https://www.google.com/search?gs_ssp=eJzj4tbP1TcwNKoyyk5PMmD04izNS85JVUjKTwIAVZAHQg&q=uncle+bob&rlz=1C1ASUM_enBR992BR992&oq=Uncle+Bob&aqs=chrome.1.69i57j46i512j0i512l8.3321j0j7&sourceid=chrome&ie=UTF-8). Sendo inicialmente divulgada através do também popular "Arquitetura Limpa - O Guia do Artesão para Estrutura e Design de Software", é bastante difundida no mercado de programação e amplamente adotada quando se trata de arquitetura de sistemas.
 
 Antes de adentrarmos no que caracteriza a Clean Architecture, é importante entender do que se trata o tópico <i>Arquitetura</i> em desenvolvimento de sistemas, porque ele é necessário, e quais são as formas de atender a essa necessidade.
 
@@ -90,17 +90,17 @@ A <i>Clean Achitecture</i> se caracteriza pela compartimentação de um sistema 
 
 Com isso, a Clean Architecture permite que o sistema funcione independentemente de qualquer agente externo à linguagem, pois estes devem ser facilmente substituíveis. Tal desacoplamento ainda permite com que se execute testes de forma muito mais simples, diretamente nos métodos que compõem a regra de negócio do sistema, sem necessitar de um banco de dados, API, ou qualquer fonte de informação. Resumindo, projetos que são desenvolvidos mediante a uma arquitetura limpa possuem:
 
-- Independência de Framework;
 - Testabilidade;
-- Independência da Inteface do Usuário;
+- Independência de Framework;
 - Independência de Banco de Dados;
+- Independência da Inteface do Usuário;
 - Independência de Qualquer Elemento Externo;
 
 Tendo definido a razão pela qual optar por uma arquitetura limpa é vantajoso, podemos entender seus aspectos em detalhes:
 
 ## Layers
 
-Como foi, a arquitetura limpa visa a compartimentação das funcionalidades em diferentes camadas. A seguir, iremos abordar essas camadas e as responsabilidades que cada uma delas detêm:
+Como foi dito, a arquitetura limpa visa a compartimentação das funcionalidades em diferentes camadas. A seguir, iremos abordar essas camadas e as responsabilidades que cada uma delas detêm:
 
 <img src="https://user-images.githubusercontent.com/61476935/211211262-f4cc8e4f-c3fe-4b84-a832-39f21d612441.png">
 
@@ -136,4 +136,4 @@ A camada de <i>Domain</i> comporta a regra de negócio em geral, contendo as cla
 
 ### Data Layer
 
-A camada <i>Data</i> é reponsável por expor as data sources, a implementação dos casos de uso e qualquer fonte de informação externa, além de definir os models criados a partir das entidades.
+A camada <i>Data</i> é reponsável por expor as data sources, a implementação dos repositórios de caso de uso e qualquer fonte de informação externa, além de definir os models criados a partir das entidades.
