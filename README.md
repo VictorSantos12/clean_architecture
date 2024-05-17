@@ -126,6 +126,16 @@ Um dos aspectos que torna a adoção da Clean Architecture problemática é, a p
 
 <img src="https://user-images.githubusercontent.com/61476935/210433815-0c1438ab-6a5a-4779-8270-357ed1144609.png">
 
+A estrutura de arquivos seria a seguinte:
+
+    |_data
+    |  |_datasource
+    |  |_repository
+    |_domain
+    |  |_entities
+    |  |_usecases
+    |_presenter
+
 ### Presentation Layer
 
 A camada de apresentação corresponde as duas últimas camadas da Clean Architecture. É onde são declarados os <i>Interface Adapters</i>, <i>Frameworks</i> e <i>Drivers</i>. É nela que as informações serão tratadas e exibidas, ou enviadas através da implementação dos casos de uso.
